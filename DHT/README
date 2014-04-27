@@ -1,0 +1,15 @@
+
+@author Valentine Chiwome
+
+This project implements a distributed hash table using
+"chord". It creates several processes on the same machine
+and these processes communicate using UDP. I have used
+UDP because the probability of packet loss/packet reordering
+on a single machine is extremely low.
+
+To run this project, go to the package "test" and run
+"PeerA", "PeerB", "PeerC" and "Client" in that order.
+You will see that the key, value pairs that are added
+by "Client" are stored at the right nodes in the network.
+You can see this by examining the consoles of different 
+processes.
